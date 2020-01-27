@@ -1,19 +1,20 @@
 <html>
-  <head>
-    <title> Insurance Cost Predictor </title>
-  </head>
-   <body>
+<head>
+<title> Insurance Cost Predictor </title>
+</head>
+<body>
 <p> In this page I have attempted to use the medical cost dataset available in Kaggle to produce a Classification model using K-Neighbors Classifier with the number of neighbors as 8 and an accuracy of 84% </p>
 <p>
- <a href="https://www.kaggle.com/mirichoi0218/insurance">
-            Kaggle</a>
+<a href="https://www.kaggle.com/mirichoi0218/insurance">
+Kaggle</a>
 </p>
 <p>
- <a href="https://github.com/soumyapa/predict-insurance-cost">
-            My GitHub Repo for this work
- </a>
+<a href="https://github.com/soumyapa/predict-insurance-cost">
+My GitHub Repo for this work</a>
 </p>
-<br>
+<p>
+Please input the required info in the below boxes as requested. Using this info , the model will attempt to predict how much will be your insurace cost ofr that year based on your answers
+</p>
 	<form action= "{{ url_for('result') }}" method="POST">         
 	<p>Age <input type = "int" name = "age" /></p>
          <p>Number of children <input type = "int" name = "children" /></p>
