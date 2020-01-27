@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title> Insurance Cost Predictor </title>
+  </head>
+   <body>
+	<form action= "{{ url_for('result') }}" method="POST">         
+	<p>Age <input type = "int" name = "age" /></p>
+         <p>Number of children <input type = "int" name = "children" /></p>
+         <p>Enter 1 for male,0 otherwise <input type = "int" name = "sex_male" /></p>
+         <p>Enter 1 for smoker,0 otherwise <input type ="int" name = "smoker_yes" /></p>
+         <p>Enter 1 if you are in northwest region of US ,0 otherwise <input type ="int" name = "region_northwest" /></p>
+         <p>Enter 1 if your bmi is obese,0 otherwise <input type ="int" name = "bmi_Obese" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+   </body>
+</html>
